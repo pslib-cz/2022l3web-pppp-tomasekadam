@@ -19,14 +19,14 @@ section{
 }
 .contact__link{
     display: flex;
-    align-self: center;
+    align-items: center;
     color: var(--black);
     text-decoration: none;
     text-align: center;
     font-size: 0.6em;
 }
 .contact__link:first-child::after{
-    background-color: #d9d9d9;
+    background-color: #D9D9D9;
     content: "";
     display: block;
     height: 12px;
@@ -35,7 +35,7 @@ section{
     padding: 0;
     border-radius: 1px;
 }
-.contatc__link--signin{
+.contact__link--signin{
     font-size: 0.8em;
     padding: 0.5em 0;
 }
@@ -53,7 +53,7 @@ section{
 .contact__link:first-child::before{
     background-image: url(../img/phone_icon.svg);
 }
-.contatc__link--singin::before{
+.contact__link--signin::before{
     background-image: url(../img/user_icon.svg);
     width: 25px;
     height: 25px;
@@ -70,7 +70,7 @@ section{
 }
 .nav__logo{
     font-weight: 800;
-    color: #340e0e;
+    color: #340E0E;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@ section{
 .nav__img{
     width: fit-content;
     height: 40px;
-    margin: 0.2em;
+    margin-right: 0.2em;
 }
 .nav__burger_line{
     margin-top: 3px;

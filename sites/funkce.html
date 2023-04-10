@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Logoipsum - Seznam funkcí aplikace">
+    <link rel="icon" type="image/png" href="../img/logo_icon.svg"/>
+    <link rel="stylesheet" href="../styles/normalise.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/media.css">
+    <title>Logoipsum</title>
+</head>
+<body>
+    <header class="contact">
+        <div class="contact__links">
+            <a class="contact__link" href="tel:+420-777-666-666">+420 777 666 666</a>
+            <a class="contact__link" href="mailto:obchod@l3web.cz">obchod@l3web.cz</a>
+        </div>
+        <a class="contact__link contact__link--signin" href="#">Přihlášení</a>
+    </header>
+
+    <main class="main">
+
+        <nav class="nav">
+            <a class="nav__logo" href="../index.html"><img class="nav__img" src="../img/logo_icon.svg" alt="logo">Logoipsum</a>
+            <a class="button button--small" href="#">Zkušební verze</a>
+            <a class="nav__burger hamburger_change" href="javascript:void(0)">
+                <span class="nav__burger_line"></span>
+                <span class="nav__burger_line"></span>
+                <span class="nav__burger_line"></span>
+            </a>
+
+            <menu class="nav__menu hamburger_change">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Úvod</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--dropdown" href="#">Funkce</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--dropdown" href="#">Podpora</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Ceník</a></li>
+                <li class="nav__item"><a class="nav__link" href="./kontakty.html">Kontakt</a></li>
+            </menu>
+
+            <script>
+                let x = document.querySelectorAll(".hamburger_change");
+                document.addEventListener("DOMContentLoaded", () => {
+                    if (window.matchMedia("(max-width: 775px)").matches) {
+                        for (const n of document.querySelectorAll(".nav__burger")) {
+                            n.addEventListener("click", (e) => {
+                                e.preventDefault();
+                                for (const y of x) {
+                                    y.classList.toggle("active");
+                                }
+                            });
+                        }
+                    } else {
+                        for (const y of x) {
+                            y.classList.toggle("active");
+                        }
+                    }
+                });
+            </script>
+        </nav>
+
+
+
+        <header class="htree">
+            <h1 class="htree__title">Funkce</h1>
+            <div class="htree__tree">
+                <a href="../index.html" class="htree__item">Úvod</a>
+                <a href="#" class="htree__item">Funkce</a>
+            </div>
+
+            <div class="htree__container">
+                <div class="htree__text_cont">
+                    <h2 class="htree__title_second">Seznam Funkcí aplikace</h2>
+                    <p class="htree__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                </div>
+                <a href="#" class="htree__video">Videotutoriály</a>
+            </div>
+
+
+        </header>
+
+
+        <div class="cards__cont cards__cont--whole">
+            <a href="#" class="cards__card">
+                <h3 class="cards__card_title">Administrace aplikace</h3>
+                <p class="cards__card_text"><strong>Lorem ipsum dolor</strong> sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                    Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</p>
+            </a>
+            <a href="#" class="cards__card">
+                <h3 class="cards__card_title">Firemní procesy</h3>
+                <p class="cards__card_text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                    Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</strong></p>
+            </a>
+            <a href="#" class="cards__card">
+                <h3 class="cards__card_title">Firemní procesy</h3>
+                <p class="cards__card_text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                    Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</strong></p>
+            </a>
+            <a href="#" class="cards__card">
+                <h3 class="cards__card_title">Firemní procesy</h3>
+                <p class="cards__card_text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                    Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</strong></p>
+            </a>
+            <a href="#" class="cards__card">
+                <h3 class="cards__card_title">Firemní procesy</h3>
+                <p class="cards__card_text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                    Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</strong></p>
+            </a>
+            <a href="#" class="cards__card">
+                <h3 class="cards__card_title">Firemní procesy</h3>
+                <p class="cards__card_text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                    Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</strong></p>
+            </a>
+            <a href="#" class="cards__card">
+                <h3 class="cards__card_title">Firemní procesy</h3>
+                <p class="cards__card_text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                    Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</strong></p>
+            </a>
+            <a href="#" class="cards__card">
+                <h3 class="cards__card_title">Firemní procesy</h3>
+                <p class="cards__card_text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                    Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</strong></p>
+            </a>
+            <a href="#" class="cards__card">
+                <h3 class="cards__card_title">Firemní procesy</h3>
+                <p class="cards__card_text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                    Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</strong></p>
+            </a>
+            <a href="#" class="cards__card">
+                <h3 class="cards__card_title">Firemní procesy</h3>
+                <p class="cards__card_text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                    Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</strong></p>
+            </a>
+            <a href="#" class="cards__card">
+                <h3 class="cards__card_title">Firemní procesy</h3>
+                <p class="cards__card_text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                    Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</strong></p>
+            </a>
+            <a href="#" class="cards__card">
+                <h3 class="cards__card_title">Firemní procesy</h3>
+                <p class="cards__card_text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
+                    Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</strong></p>
+            </a>
+
+        </div>
+
+        <section class="finall">
+            <h2 class="finall__title">Máte dotaz <span class="color">k chování aplikace?</span></h2>
+            <p class="finall__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur</p>
+            <a class="finall__mail" href="mailto:podpora@l3web.cz">podpora@l3web.cz</a>
+            <a class="button button--centered" href="mailto:podpora@l3web.cz">Napište nám e-mail</a>
+            <p class="finall__text"><small>nebo</small></p>
+            <a class="button button--white button--centered" href="tel:+420-777-666-666">Zavolejte nám</a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__cont">
+
+            <div class="footer__section">
+                <h3 class="footer__section_title footer__section_title--logo">Logoipsum</h3>
+                <a class="footer__section_link" href="#">Pslib.cz s.r.o</a>
+                <a class="footer__section_link" href="#">Masarykova 12345</a>
+                <a class="footer__section_link" href="#">460 00 Liberec</a>
+
+                <a class="footer__section_link footer__section_link--telephone" href="tel:+420-777-666-666">+420 777 666 666</a>
+                <a class="footer__section_link footer__section_link--mail" href="mailto:info@l3web.cz">info@l3web.cz</a>
+                <a class="footer__section_link footer__section_link--youtube" href="#"></a>
+                <a class="footer__section_link footer__section_link--linkedin" href="#"></a>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section_title">Videotutoriály</h3>
+                <a class="footer__section_link" href="#">CSS</a>
+                <a class="footer__section_link" href="#">Animace</a>
+                <a class="footer__section_link" href="#">Stříhání videa</a>
+                <a class="footer__section_link" href="#">Výběr barev</a>
+                <a class="footer__section_link" href="#">Plánování pracovníků a mezd</a>
+                <a class="footer__section_link" href="#">Všechna videa</a>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section_title">Podpora</h3>
+                <a class="footer__section_link" href="#">Přihlášení k účtu</a>
+                <a class="footer__section_link" href="#">Školení</a>
+                <a class="footer__section_link" href="#">FAQ - Časté dotazy</a>
+                <a class="footer__section_link" href="#">Kontakty</a>
+                <a class="footer__section_link" href="#">Videotutoriály</a>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section_title">Menu</h3>
+                <a class="footer__section_link" href="../index.html">Úvod</a>
+                <a class="footer__section_link" href="#">Funkce</a>
+                <a class="footer__section_link" href="#">Podpora</a>
+                <a class="footer__section_link" href="#">Ceník</a>
+                <a class="footer__section_link" href="./sites/kontakty.html">Kontakt</a>
+            </div>
+        </div>
+        <div class="footer__container">
+            <div>
+                <p class="footer__text">© Copyright 2023 - Pslib.cz s.r.o.</p>
+                <a class="footer__text" href="#">| Cookies |</a>
+                <a class="footer__text" href="#">Podmínky užití</a>
+            </div>
+            <p class="footer__shoutout">Vyrobilo: B interactive</p>
+        </div>
+        
+    </footer>
+</body>
+</html>

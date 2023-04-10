@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Logoipsum - Software pro řízení lidských zdrojů">
+    <link rel="icon" type="image/png" href="./img/logo_icon.svg"/>
+    <link rel="stylesheet" href="./styles/normalise.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <title>Logoipsum</title>
-    <link rel="ico" type="image/png" href="./img/logo_icon.svg">
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/normalise.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header class="contact">
         <div class="contact__links">
@@ -21,12 +21,13 @@
         <a class="contact__link contact__link--signin"  href="#">Přihlášení</a>
     </header>
 
+
     <main class="main">
 
         <nav class="nav">
             <a class="nav__logo" href="#"><img class="nav__img" src="./img/logo_icon.svg" alt="logo">Logoipsum</a>
             <a class="button button--small" href="#">Zkušební verze</a>
-            <a class="nav__burger hamburger__change" href="javascript:void(0)">
+            <a class="nav__burger hamburger_change" href="javascript:void(0)">
                 <span class="nav__burger_line"></span>
                 <span class="nav__burger_line"></span>
                 <span class="nav__burger_line"></span>
@@ -34,10 +35,10 @@
 
             <menu class="nav__menu hamburger_change">
                 <li class="nav__item"><a class="nav__link" href="#">Úvod</a></li>
-                <li class="nav__item"><a class="nav__link nav__link--dropdown" href="#">Funkce</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--dropdown" href="./sites/funkce.html">Funkce</a></li>
                 <li class="nav__item"><a class="nav__link nav__link--dropdown" href="#">Podpora</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Ceník</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Kontakt</a></li>
+                <li class="nav__item"><a class="nav__link" href="./sites/kontakty.html">Kontakt</a></li>
             </menu>
 
             <script>
@@ -94,34 +95,34 @@
 
             <div class="cards">
                 <div class="cards__cont">
-                    <div class="cards__card">
+                    <a href="#" class="cards__card">
                         <h3 class="cards__card_title">Administrace aplikace</h3>
-                        <a href="#" class="cards__card_text"><strong>Lorem ipsum dolor</strong> sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
+                        <p class="cards__card_text"><strong>Lorem ipsum dolor</strong> sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus luctus egestas leo. 
                             Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
-                            Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</a>
-                    </div>
-                    <div class="cards__card">
+                            Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</p>
+                    </a>
+                    <a href="#" class="cards__card">
                         <h3 class="cards__card_title">Tvorba organizační struktury</h3>
-                        <a href="#" class="cards__card_text">Vestibulum fermentum tortor id mi. <strong>Duis viverra diam non justo. Vivamus</strong> ac leo 
-                            pretium faucibus. Aenean placerat. Fusce tellus</a>
-                    </div>
-                    <div class="cards__card">
+                        <p class="cards__card_text">Vestibulum fermentum tortor id mi. <strong>Duis viverra diam non justo. Vivamus</strong> ac leo 
+                            pretium faucibus. Aenean placerat. Fusce tellus</p>
+                    </a>
+                    <a href="#" class="cards__card">
                         <h3 class="cards__card_title">Popisy pracovních míst</h3>
-                        <a href="#" class="cards__card_text">Nullam rhoncus aliquam metus. Aliquam ornare wisi eu metus. 
-                            Nulla quis diam. Maecenas libero. Nunc auctor. Duis viverra d</a>
-                    </div>
-                    <div class="cards__card">
+                        <p class="cards__card_text">Nullam rhoncus aliquam metus. Aliquam ornare wisi eu metus. 
+                            Nulla quis diam. Maecenas libero. Nunc auctor. Duis viverra d</p>
+                    </a>
+                    <a href="#" class="cards__card">
                         <h3 class="cards__card_title">Firemní procesy</h3>
-                        <a href="#" class="cards__card_text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus 
+                        <p class="cards__card_text"><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Vivamus 
                             luctus egestas leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. 
-                            Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</strong></a>
-                    </div>
+                            Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</strong></p>
+                    </a>
                 </div>
                 <div class="cards__dots">
                     <a class="cards__dot cards__dot--active" href="#"></a>
                     <a class="cards__dot" href="#"></a>
                 </div>
-                <a class="button button--centered" href="#">Prozkoumat všechny funkce</a>
+                <a class="button button--centered" href="./sites/funkce.html">Prozkoumat všechny funkce</a>
             </div>
 
         </section>
@@ -260,7 +261,7 @@
                 <h3 class="footer__section_title">Videotutoriály</h3>
                 <a class="footer__section_link" href="#">CSS</a>
                 <a class="footer__section_link" href="#">Animace</a>
-                <a class="footer__section_link" href="#">Stříhání viudea</a>
+                <a class="footer__section_link" href="#">Stříhání videa</a>
                 <a class="footer__section_link" href="#">Výběr barev</a>
                 <a class="footer__section_link" href="#">Plánování pracovníků a mezd</a>
                 <a class="footer__section_link" href="#">Všechna videa</a>
@@ -276,10 +277,10 @@
             <div class="footer__section">
                 <h3 class="footer__section_title">Menu</h3>
                 <a class="footer__section_link" href="#">Úvod</a>
-                <a class="footer__section_link" href="#">Funkce</a>
+                <a class="footer__section_link" href="./sites/funkce.html">Funkce</a>
                 <a class="footer__section_link" href="#">Podpora</a>
                 <a class="footer__section_link" href="#">Ceník</a>
-                <a class="footer__section_link" href="#">Kontakt</a>
+                <a class="footer__section_link" href="./sites/kontakty.html">Kontakt</a>
             </div>
         </div>
         <div class="footer__container">
