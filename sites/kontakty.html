@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Logoipsum - Kontakty">
+    <link rel="icon" type="image/png" href="../img/logo_icon.svg"/>
+    <link rel="stylesheet" href="../styles/normalise.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/media.css">
+    <title>Logoipsum</title>
+</head>
+<body>
+    <header class="contact">
+        <div class="contact__links">
+            <a class="contact__link" href="tel:+420-777-666-666">+420 777 666 666</a>
+            <a class="contact__link" href="mailto:obchod@l3web.cz">obchod@l3web.cz</a>
+        </div>
+        <a class="contact__link contact__link--signin" href="#">Přihlášení</a>
+    </header>
+
+
+    <main class="main">
+
+        <nav class="nav">
+            <a class="nav__logo" href="../index.html"><img class="nav__img" src="../img/logo_icon.svg" alt="logo">Logoipsum</a>
+            <a class="button button--small" href="#">Zkušební verze</a>
+            <a class="nav__burger hamburger_change" href="javascript:void(0)">
+                <span class="nav__burger_line"></span>
+                <span class="nav__burger_line"></span>
+                <span class="nav__burger_line"></span>
+            </a>
+
+            <menu class="nav__menu hamburger_change">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Úvod</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--dropdown" href="./funkce.html">Funkce</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--dropdown" href="#">Podpora</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Ceník</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Kontakt</a></li>
+            </menu>
+
+            <script>
+                let x = document.querySelectorAll(".hamburger_change");
+                document.addEventListener("DOMContentLoaded", () => {
+                    if (window.matchMedia("(max-width: 775px)").matches) {
+                        for (const n of document.querySelectorAll(".nav__burger")) {
+                            n.addEventListener("click", (e) => {
+                                e.preventDefault();
+                                for (const y of x) {
+                                    y.classList.toggle("active");
+                                }
+                            });
+                        }
+                    } else {
+                        for (const y of x) {
+                            y.classList.toggle("active");
+                        }
+                    }
+                });
+            </script>
+        </nav>
+
+
+
+        <header class="htree">
+            <h1 class="htree__title">Kontakt</h1>
+            <div class="htree__tree">
+                <a href="../index.html" class="htree__item">Úvod</a>
+                <a href="#" class="htree__item">Kontakt</a>
+            </div>
+        </header>
+
+        <section class="shop">
+            <div class="shop__container">
+                <div class="shop__text_cont">
+                    <h2 class="shop__title">E-SHOP / ZÁKAZNICKÝ SERVIS</h2>
+                    <p class="shop__text">Volejte <strong>+420 777 666 666</strong>, každý všední den od 8:00 do 16:00 hod</p>
+                </div>
+                <div class="shop__contacts">
+                    <div class="shop__contact">
+                        <img class="shop__contact_img" src="../img/contact_01.png" alt="Paní v oranžovém">
+                        <div class="shop__contact_cont">
+                            <p class="shop__contact_text">Theresa Webb</p>
+                            <p class="shop__contact_text">(252) 555-0126</p>
+                            <p class="shop__contact_text">debbie.baker@example.com</p>
+                        </div>
+                    </div>
+                    <div class="shop__contact">
+                        <img class="shop__contact_img" src="../img/contact_02.png" alt="Pán v bílém">
+                        <div class="shop__contact_cont">
+                            <p class="shop__contact_text">Albert Flores</p>
+                            <p class="shop__contact_text">(406) 555-0120</p>
+                            <p class="shop__contact_text">jackson.graham@example.com</p>
+                        </div>
+                    </div>
+                    <div class="shop__contact">
+                        <img class="shop__contact_img" src="../img/contact_03.png" alt="Paní v bílém">
+                        <div class="shop__contact_cont">
+                            <p class="shop__contact_text">Darrell Steward</p>
+                            <p class="shop__contact_text">(319) 555-0115</p>
+                            <p class="shop__contact_text">debra.holt@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <iframe class="shop__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1784.1216279144812!2d15.063229211103812!3d50.77318214362211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470936a0b62f8e83%3A0x27e91649b311f9a0!2zU3TFmWVkbsOtIHByxa9teXNsb3bDoSDFoWtvbGEgc3Ryb2puw60gYSBlbGVrdHJvdGVjaG5pY2vDoSBhIFZ5xaHFocOtIG9kYm9ybsOhIMWha29sYQ!5e0!3m2!1scs!2scz!4v1680355825710!5m2!1scs!2scz"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+
+        <section class="secretary">
+            <h2 class="secretary__title">OSTATNÍ KONTAKTY</h2>
+            <p class="secretary__title">CENTRÁLA</p>
+            <div class="secretary__container">
+                <div class="secretary__cont">
+                    <p class="secretary__details">Obchod a. s.</p>
+                    <p class="secretary__details">Masarykova 3,</p>
+                    <p class="secretary__details">460 84 Liberec</p>
+                    <p class="secretary__details">Tel.: (217) 555-0113</p>
+                    <p class="secretary__details">E-mail: dolores.chambers@example.com</p>
+                </div>
+                <div class="secretary__cont">
+                    <p class="secretary__details">IČO: 420 69 458</p>
+                    <p class="secretary__details">DIČ: CZ42069458</p>
+                    <p class="secretary__details">Spisová značka A 5284 vedená u rejstříkového soudu v Liberci.</p>
+                    <p class="secretary__details">Datová schránka (ID):a8dsvsl</p>
+                </div>
+                <div class="secretary__contact">
+                    <img class="secretary__contact_img" src="../img/contact_main.png" alt="Fousatý pán">
+                    <div class="secretary__contact_cont">
+                        <p class="secretary__contact_text">Sekretariát</p>
+                        <p class="secretary__contact_text">Cameron Williamson</p>
+                        <p class="secretary__contact_text">(209) 555-0104</p>
+                        <p class="secretary__contact_text">debbie.baker@example.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secretary__container secretary__container--info">
+                <div class="secretary__cont secretary__cont--center">
+                    <p class="secretary__title">VELKOOBCHOD</p>
+                    <p class="secretary__details">Courtney Henry</p>
+                    <p class="secretary__details">E-mail: nathan.roberts@example.com</p>
+                </div>
+                <div class="secretary__cont">
+                    <p class="secretary__details">Obchod a. s.</p>
+                    <p class="secretary__details">Na Rybníčku 145,</p>
+                    <p class="secretary__details">460 02 Liberec</p>
+                </div>
+                <div class="secretary__cont">
+                    <p class="secretary__title secretary__title--left">CENTRÁLNÍ SKLAD</p>
+                    <p class="secretary__details">Po - Pá: 7:00-17:00 hod.</p>
+                    <p class="secretary__details">Tel.: (208) 555-0112</p>
+                    <p class="secretary__details">E-mail: nevaeh.simmons@example.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__cont">
+            
+            <div class="footer__section">
+                <h3 class="footer__section_title footer__section_title--logo">Logoipsum</h3>
+                <a class="footer__section_link" href="#">Pslib.cz s.r.o</a>
+                <a class="footer__section_link" href="#">Masarykova 12345</a>
+                <a class="footer__section_link" href="#">460 00 Liberec</a>
+
+                <a class="footer__section_link footer__section_link--telephone" href="tel:+420-777-666-666">+420 777 666 666</a>
+                <a class="footer__section_link footer__section_link--mail" href="mailto:info@l3web.cz">info@l3web.cz</a>
+                <a class="footer__section_link footer__section_link--youtube" href="#"></a>
+                <a class="footer__section_link footer__section_link--linkedin" href="#"></a>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section_title">Videotutoriály</h3>
+                <a class="footer__section_link" href="#">CSS</a>
+                <a class="footer__section_link" href="#">Animace</a>
+                <a class="footer__section_link" href="#">Stříhání videa</a>
+                <a class="footer__section_link" href="#">Výběr barev</a>
+                <a class="footer__section_link" href="#">Plánování pracovníků a mezd</a>
+                <a class="footer__section_link" href="#">Všechna videa</a>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section_title">Podpora</h3>
+                <a class="footer__section_link" href="#">Přihlášení k účtu</a>
+                <a class="footer__section_link" href="#">Školení</a>
+                <a class="footer__section_link" href="#">FAQ - Časté dotazy</a>
+                <a class="footer__section_link" href="#">Kontakty</a>
+                <a class="footer__section_link" href="#">Videotutoriály</a>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section_title">Menu</h3>
+                <a class="footer__section_link" href="../index.html">Úvod</a>
+                <a class="footer__section_link" href="./funkce.html">Funkce</a>
+                <a class="footer__section_link" href="#">Podpora</a>
+                <a class="footer__section_link" href="#">Ceník</a>
+                <a class="footer__section_link" href="#">Kontakt</a>
+            </div>
+        </div>
+        <div class="footer__container">
+            <div>
+                <p class="footer__text">© Copyright 2023 - Pslib.cz s.r.o.</p>
+                <a class="footer__text" href="#">| Cookies |</a>
+                <a class="footer__text" href="#">Podmínky užití</a>
+            </div>
+            <p class="footer__shoutout">Vyrobilo: B interactive</p>
+        </div>
+
+    </footer>
+</body>
+</html>
